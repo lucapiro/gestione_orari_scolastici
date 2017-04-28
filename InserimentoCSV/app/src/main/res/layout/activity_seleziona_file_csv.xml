@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_seleziona_file_csv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.confalonieri.inserimentocsv.SelezionaFileCSV">
+
+    <Button
+        android:id="@+id/btn_SelezionaFile"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/btnSelezionaFile_Text"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView_ScrittaRadio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp">
+
+        <RadioButton
+            android:id="@+id/radio_CaricaPerClasse"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:enabled="false"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/radioCaricaPerClasse_Text"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radio_CaricaPerProf"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:enabled="false"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/radioCaricaPerProf_Text"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/TextView_FilePath"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_SelezionaFile"
+        android:layout_marginLeft="200dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/TextView_ScrittaRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_SelezionaFile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/TextViewScrittaRadio_Text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/TextView_ScrittaPostScelta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginLeft="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/ET_InserimentoDatiRicerca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TextView_ScrittaRadio"
+        android:layout_below="@+id/TextView_ScrittaPostScelta"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_LetturaFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_SelezionaFile"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="21dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/btnLetturaFile_Text"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TextView_FilePath"
+        android:layout_alignTop="@+id/btn_LetturaFile"
+        android:layout_marginStart="20dp"
+        android:text="@string/btnLogout_Text" />
+
+</RelativeLayout>

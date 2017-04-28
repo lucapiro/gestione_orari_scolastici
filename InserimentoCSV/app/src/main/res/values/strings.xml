@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">InserimentoCSV</string>
+    <string name="btnLogin_Text">Login</string>
+    <string name="TVLogin_text">LOGGATI:</string>
+    <string name="TVLoginUsername_Text">Username:</string>
+    <string name="TVLoginPassword_Text">Password</string>
+    <string name="ETLoginPassword_Text" />
+    <string name="ETLoginUsername_Text" />
+    <string name="btnSelezionaFile_Text">Seleziona File</string>
+    <string name="radioCaricaPerClasse_Text">Classe</string>
+    <string name="radioCaricaPerProf_Text">prof</string>
+    <string name="TextViewScrittaRadio_Text">Come vuoi importare il file?</string>
+    <string name="btnLetturaFile_Text">OK</string>
+    <string name="btnLogout_Text">LogOut</string>
+</resources>
