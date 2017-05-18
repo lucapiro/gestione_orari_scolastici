@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://gestioneOrari.confalonieri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://gestioneOrari.confalonieri.org/">
+
+<xs:element name="InserisciOrario" type="tns:InserisciOrario" />
+
+<xs:element name="InserisciOrarioResponse" type="tns:InserisciOrarioResponse" />
+
+<xs:element name="InvioFile" type="tns:InvioFile" />
+
+<xs:element name="InvioFileResponse" type="tns:InvioFileResponse" />
+
+<xs:element name="controllaUtente" type="tns:controllaUtente" />
+
+<xs:element name="controllaUtenteResponse" type="tns:controllaUtenteResponse" />
+
+<xs:complexType name="InvioFile">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="InvioFileResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InserisciOrario">
+<xs:sequence>
+<xs:element name="nomeProf" type="xs:string" minOccurs="0" />
+<xs:element name="ora" type="xs:int" />
+<xs:element name="giorno" type="xs:int" />
+<xs:element name="classe" type="xs:string" minOccurs="0" />
+<xs:element name="aula" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InserisciOrarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="controllaUtente">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="controllaUtenteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

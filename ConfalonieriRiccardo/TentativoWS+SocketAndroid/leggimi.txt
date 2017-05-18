@@ -1,0 +1,1 @@
+Tentativo di ws con android e socket non funzionante.. Il client android non sempre riesce a collegarsi e ricevere il file dal WS!

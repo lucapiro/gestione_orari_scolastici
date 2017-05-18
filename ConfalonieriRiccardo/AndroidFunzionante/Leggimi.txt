@@ -1,0 +1,4 @@
+(Consegna di fine aprile)
+
+Android con corretta login, selezione del file, lettura degli orari e inserimento nel db
+ws con collegamento al database funzionante!
